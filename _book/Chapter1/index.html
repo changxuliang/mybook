@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>第一章  GitBook基础篇 · GitBook</title>
+        <title>第一章  CloudStack上线资源池概况 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,7 +57,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="衣.html" />
+    <link rel="next" href="../Chapter2/" />
     
     
     <link rel="prev" href="../" />
@@ -94,7 +94,7 @@
                 <a href="../">
             
                     
-                    前言
+                    CloudStack平台架构及运维监控
             
                 </a>
             
@@ -107,69 +107,11 @@
                 <a href="./">
             
                     
-                    第一章  GitBook基础篇
+                    第一章  CloudStack上线资源池概况
             
                 </a>
             
 
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.2.1" data-path="衣.html">
-            
-                <a href="衣.html">
-            
-                    
-                    1.  简介
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2.2" data-path="食.html">
-            
-                <a href="食.html">
-            
-                    
-                    第2节：食
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2.3" data-path="住.html">
-            
-                <a href="住.html">
-            
-                    
-                    第3节：住
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2.4" data-path="行.html">
-            
-                <a href="行.html">
-            
-                    
-                    第4节：行
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
             
         </li>
     
@@ -178,7 +120,7 @@
                 <a href="../Chapter2/">
             
                     
-                    第二章
+                    第二章  CloudStack硬件整体架构
             
                 </a>
             
@@ -191,7 +133,7 @@
                 <a href="../Chapter3/">
             
                     
-                    第三章
+                    第三章  CloudStack平台架构
             
                 </a>
             
@@ -204,11 +146,69 @@
                 <a href="../Chapter4/">
             
                     
-                    第四章
+                    第四章  CloudStack平台运维
             
                 </a>
             
 
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Chapter5/">
+            
+                <a href="../Chapter5/">
+            
+                    
+                    第五章  CloudStack平台监控
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Chapter5/sector1.html">
+            
+                <a href="../Chapter5/sector1.html">
+            
+                    
+                    第1节：zabbix-server安装配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../Chapter5/sector2.html">
+            
+                <a href="../Chapter5/sector2.html">
+            
+                    
+                    第2节：grafana+zabbix安装配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../Chapter5/sector3.html">
+            
+                <a href="../Chapter5/sector3.html">
+            
+                    
+                    第3节：zabbix监控mysql配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -242,7 +242,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >第一章  GitBook基础篇</a>
+        <a href=".." >第一章  CloudStack上线资源池概况</a>
     </h1>
 </div>
 
@@ -257,7 +257,9 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x7B2C;&#x4E00;&#x7AE0;">&#x7B2C;&#x4E00;&#x7AE0;</h1>
+                                <h1 id="&#x7B2C;&#x4E00;&#x7AE0;---cloudstack&#x4E0A;&#x7EBF;&#x8D44;&#x6E90;&#x6C60;&#x6982;&#x51B5;">&#x7B2C;&#x4E00;&#x7AE0;   CloudStack&#x4E0A;&#x7EBF;&#x8D44;&#x6E90;&#x6C60;&#x6982;&#x51B5;</h1>
+<h2 id="cs&#x8D44;&#x6E90;&#x6C60;24&#x4E2A;">CS&#x8D44;&#x6E90;&#x6C60;(24&#x4E2A;)</h2>
+<p>&#x200B;       &#x4E0A;&#x6D77;1&#xFF08;&#x4E00;&#x671F;&#x534E;&#x4E1C;&#xFF09;&#x3001;&#x6210;&#x90FD;1&#xFF08;&#x4E00;&#x671F;&#x897F;&#x5357;&#xFF09;&#x3001;&#x5E7F;&#x5DDE;1&#xFF08;&#x4E00;&#x671F;&#x534E;&#x5357;&#xFF09;&#x3001;&#x4E0A;&#x6D77;2&#x3001;&#x4E0A;&#x6D77;3&#x3001;&#x6210;&#x90FD;2&#x3001;&#x5E7F;&#x5DDE;&#x4E13;&#x4EAB;&#x4E91;&#x3001;&#x5E7F;&#x5DDE;2&#x3001;&#x5E7F;&#x5DDE;3&#x3001;&#x5185;&#x8499;1&#x3001;&#x5185;&#x8499;2&#x3001;&#x5185;&#x8499;4&#x3001;&#x5185;&#x8499;&#x79C1;&#x6709;&#x4E91;&#x3001;&#x5185;&#x8499;&#x4E13;&#x5C5E;&#x4E91;&#x3001;&#x5317;&#x4EAC;1&#x3001;&#x53A6;&#x95E8;1&#x3001;&#x5357;&#x4EAC;1&#x3001;&#x897F;&#x5B89;1&#x3001;&#x957F;&#x6C99;1&#x3001;&#x798F;&#x5DDE;2&#x3001;&#x6B66;&#x6C49;1&#x3001;&#x6C88;&#x9633;1&#x3001;&#x8D35;&#x5DDE;2&#x548C;&#x96C4;&#x5B89;&#x3002;</p>
 
                                 
                                 </section>
@@ -285,12 +287,12 @@
 
             
                 
-                <a href="../" class="navigation navigation-prev " aria-label="Previous page: 前言">
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: CloudStack平台架构及运维监控">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="衣.html" class="navigation navigation-next " aria-label="Next page: 1.  简介">
+                <a href="../Chapter2/" class="navigation navigation-next " aria-label="Next page: 第二章  CloudStack硬件整体架构">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -301,7 +303,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"第一章  GitBook基础篇","level":"1.2","depth":1,"next":{"title":"1.  简介","level":"1.2.1","depth":2,"path":"Chapter1/衣.md","ref":"Chapter1/衣.md","articles":[]},"previous":{"title":"前言","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Chapter1/README.md","mtime":"2019-07-31T03:01:39.812Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-31T09:48:42.495Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"第一章  CloudStack上线资源池概况","level":"1.2","depth":1,"next":{"title":"第二章  CloudStack硬件整体架构","level":"1.3","depth":1,"path":"Chapter2/README.md","ref":"Chapter2/README.md","articles":[]},"previous":{"title":"CloudStack平台架构及运维监控","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Chapter1/README.md","mtime":"2019-08-05T02:35:00.536Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-05T08:38:27.235Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>第2节：食 · GitBook</title>
+        <title>第五章  CloudStack平台监控 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="住.html" />
+    <link rel="next" href="sector1.html" />
     
     
-    <link rel="prev" href="衣.html" />
+    <link rel="prev" href="../Chapter4/" />
     
 
     </head>
@@ -94,7 +94,7 @@
                 <a href="../">
             
                     
-                    前言
+                    CloudStack平台架构及运维监控
             
                 </a>
             
@@ -102,74 +102,16 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="./">
+        <li class="chapter " data-level="1.2" data-path="../Chapter1/">
             
-                <a href="./">
+                <a href="../Chapter1/">
             
                     
-                    第一章  GitBook基础篇
+                    第一章  CloudStack上线资源池概况
             
                 </a>
             
 
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.2.1" data-path="衣.html">
-            
-                <a href="衣.html">
-            
-                    
-                    1.  简介
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter active" data-level="1.2.2" data-path="食.html">
-            
-                <a href="食.html">
-            
-                    
-                    第2节：食
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2.3" data-path="住.html">
-            
-                <a href="住.html">
-            
-                    
-                    第3节：住
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2.4" data-path="行.html">
-            
-                <a href="行.html">
-            
-                    
-                    第4节：行
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
             
         </li>
     
@@ -178,7 +120,7 @@
                 <a href="../Chapter2/">
             
                     
-                    第二章
+                    第二章  CloudStack硬件整体架构
             
                 </a>
             
@@ -191,7 +133,7 @@
                 <a href="../Chapter3/">
             
                     
-                    第三章
+                    第三章  CloudStack平台架构
             
                 </a>
             
@@ -204,11 +146,69 @@
                 <a href="../Chapter4/">
             
                     
-                    第四章
+                    第四章  CloudStack平台运维
             
                 </a>
             
 
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    第五章  CloudStack平台监控
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="sector1.html">
+            
+                <a href="sector1.html">
+            
+                    
+                    第1节：zabbix-server安装配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="sector2.html">
+            
+                <a href="sector2.html">
+            
+                    
+                    第2节：grafana+zabbix安装配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="sector3.html">
+            
+                <a href="sector3.html">
+            
+                    
+                    第3节：zabbix监控mysql配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -242,7 +242,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >第2节：食</a>
+        <a href=".." >第五章  CloudStack平台监控</a>
     </h1>
 </div>
 
@@ -257,7 +257,13 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x7B2C;2&#x8282;&#xFF1A;&#x98DF;">&#x7B2C;2&#x8282;&#xFF1A;&#x98DF;</h1>
+                                <h1 id="&#x7B2C;&#x4E94;&#x7AE0;--cloudstack&#x5E73;&#x53F0;&#x76D1;&#x63A7;">&#x7B2C;&#x4E94;&#x7AE0;  CloudStack&#x5E73;&#x53F0;&#x76D1;&#x63A7;</h1>
+<h1 id="zabbix-server&#x5B89;&#x88C5;&#x914D;&#x7F6E;&#x6587;&#x6863;">Zabbix-server&#x5B89;&#x88C5;&#x914D;&#x7F6E;&#x6587;&#x6863;</h1>
+<p>By:&#x674E;&#x632F;&#x9022; 2019.08.02</p>
+<h1 id="grafanazabbix&#x5B89;&#x88C5;&#x914D;&#x7F6E;&#x6587;&#x6863;">Grafana+Zabbix&#x5B89;&#x88C5;&#x914D;&#x7F6E;&#x6587;&#x6863;</h1>
+<p>By:&#x674E;&#x632F;&#x9022; 2019.07.29</p>
+<h1 id="zabbix&#x76D1;&#x63A7;mysql&#x914D;&#x7F6E;&#x6587;&#x6863;">Zabbix&#x76D1;&#x63A7;mysql&#x914D;&#x7F6E;&#x6587;&#x6863;</h1>
+<p>By:&#x674E;&#x632F;&#x9022; 2019.08.05</p>
 
                                 
                                 </section>
@@ -285,12 +291,12 @@
 
             
                 
-                <a href="衣.html" class="navigation navigation-prev " aria-label="Previous page: 1.  简介">
+                <a href="../Chapter4/" class="navigation navigation-prev " aria-label="Previous page: 第四章  CloudStack平台运维">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="住.html" class="navigation navigation-next " aria-label="Next page: 第3节：住">
+                <a href="sector1.html" class="navigation navigation-next " aria-label="Next page: 第1节：zabbix-server安装配置">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -301,7 +307,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"第2节：食","level":"1.2.2","depth":2,"next":{"title":"第3节：住","level":"1.2.3","depth":2,"path":"Chapter1/住.md","ref":"Chapter1/住.md","articles":[]},"previous":{"title":"1.  简介","level":"1.2.1","depth":2,"path":"Chapter1/衣.md","ref":"Chapter1/衣.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Chapter1/食.md","mtime":"2019-07-31T03:01:40.130Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-31T09:48:42.495Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"第五章  CloudStack平台监控","level":"1.6","depth":1,"next":{"title":"第1节：zabbix-server安装配置","level":"1.6.1","depth":2,"path":"Chapter5/sector1.md","ref":"Chapter5/sector1.md","articles":[]},"previous":{"title":"第四章  CloudStack平台运维","level":"1.5","depth":1,"path":"Chapter4/README.md","ref":"Chapter4/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Chapter5/README.md","mtime":"2019-08-05T07:58:48.591Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-05T08:38:27.235Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
