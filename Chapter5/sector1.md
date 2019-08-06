@@ -50,9 +50,11 @@ yum install mariadb-server mariadb mariadb-libs
 
 修改/etc/my.cnf：
 
-datadir=/var/lib/mysql #修改当前路径为新的 
+```
+datadir=/var/lib/mysql #修改当前路径为新的
+```
 
-启动数据库
+ 启动数据库
 
 ```
 systemctl start mariadb
@@ -77,7 +79,7 @@ mysql
 
  解压sql脚本并导入：
 
-`cp /usr/share/doc/zabbix-server-mysql-3.2.11/create.sql.gz .`
+` cp /usr/share/doc/zabbix-server-mysql-3.2.11/create.sql.gz .`
 
 ```
 gunzip create.sql.gz
@@ -120,4 +122,60 @@ php_value date.timezone Asia/Shanghai
 `service httpd restart`
 
 ##  2.4  zabbix-web界面配置
+
+浏览器打开：http://192.168.80.216/zabbix
+
+![Welcome](http://localhost:4000/Chapter5/img/1564995590703.png)
+
+![Check of pre-requires](http://localhost:4000/Chapter5/img/1564995640474.png)
+
+配置数据库连接信息：
+
+![Configure DB connection](http://localhost:4000/Chapter5/img/1564995925191.png)
+
+设置zabbix-server信息:
+
+![Zabbix server details](http://localhost:4000/Chapter5/img/1564996062716.png)
+
+输入用户名密码登录：Admin/zabbix，成功后记得修改密码：
+
+![login](http://localhost:4000/Chapter5/img/1564996149999.png)
+
+##  2.5  创建zabbix_view账号给grafana使用
+
+zabbix_view/4Qk6PM5U3vB4fYk3
+
+#  3  zabbix-agent安装
+
+##  3.1  版本选择
+
+为了能兼容大多数系统，我们选择了zabbix-agent-3.2.9-1。
+
+##  3.2  安装
+
+`rpm –ivh zabbix-agent-3.2.9-1.*.rpm`
+
+##  3.3  配置
+
+修改文件：/etc/zabbix/zabbix_agentd.conf
+
+我们一般修改以下几项即可：
+
+```
+SourceIP=192.168.80.217   # agent端的IP，也可以默认不指定
+
+Server=192.168.80.216     # zabbix-server地址
+
+ServerActive=192.168.80.216 # zabbix-server地址
+
+Hostname=ms_01         # 主机名称
+```
+
+##  3.4  启动agent
+
+```
+systemctl start zabbix-agent
+
+systemctl enable zabbix-agent
+```
 
