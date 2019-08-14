@@ -1,0 +1,689 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第1节：西安交警案例 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="sector2.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    CloudStack平台架构及运维监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Chapter1/">
+            
+                <a href="../Chapter1/">
+            
+                    
+                    第一章  CloudStack资源池概况
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Chapter2/">
+            
+                <a href="../Chapter2/">
+            
+                    
+                    第二章  CloudStack硬件整体架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Chapter3/">
+            
+                <a href="../Chapter3/">
+            
+                    
+                    第三章  CloudStack平台架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    第四章  CloudStack平台运维
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.5.1" data-path="sector1.html">
+            
+                <a href="sector1.html">
+            
+                    
+                    第1节：西安交警案例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="sector2.html">
+            
+                <a href="sector2.html">
+            
+                    
+                    第2节：四维图新案例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Chapter5/">
+            
+                <a href="../Chapter5/">
+            
+                    
+                    第五章  CloudStack平台监控
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Chapter5/sector1.html">
+            
+                <a href="../Chapter5/sector1.html">
+            
+                    
+                    第1节：zabbix-server安装配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../Chapter5/sector2.html">
+            
+                <a href="../Chapter5/sector2.html">
+            
+                    
+                    第2节：grafana+zabbix安装配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../Chapter5/sector3.html">
+            
+                <a href="../Chapter5/sector3.html">
+            
+                    
+                    第3节：zabbix监控mysql配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第1节：西安交警案例</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7B2C;1&#x8282;&#xFF1A;&#x897F;&#x5B89;&#x4EA4;&#x8B66;&#x6848;&#x4F8B;">&#x7B2C;1&#x8282;&#xFF1A;&#x897F;&#x5B89;&#x4EA4;&#x8B66;&#x6848;&#x4F8B;</h1>
+<h2 id="vr&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;crash&#xFF08;&#x897F;&#x5B89;&#x4EA4;&#x8B66;&#x6848;&#x4F8B;&#xFF09;">VR&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;CRASH&#xFF08;&#x897F;&#x5B89;&#x4EA4;&#x8B66;&#x6848;&#x4F8B;&#xFF09;</h2>
+<p>&#x3010;&#x6545;&#x969C;&#x63CF;&#x8FF0;&#x3011;</p>
+<p>  VR&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;crash&#xFF0C;&#x6240;&#x6709;&#x516C;&#x7F51;IP&#x65AD;&#x7F51;&#x3002;</p>
+<p>&#x3010;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#x3011;</p>
+<table>
+<thead>
+<tr>
+<th><strong>&#x7C7B;&#x578B;</strong></th>
+<th><strong>&#x503C;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VPC   Name</td>
+<td>0a34810a763a45ed9243b73d25e7eb2a</td>
+</tr>
+<tr>
+<td>VPC   ID</td>
+<td>56d433c7-ff24-45ec-b11f-9897795e7d2f</td>
+</tr>
+<tr>
+<td>VR</td>
+<td>r-19411-VM</td>
+</tr>
+<tr>
+<td>VR&#x94FE;&#x63A5;&#x5730;&#x5740;</td>
+<td>10.134.16.14</td>
+</tr>
+<tr>
+<td>VPC   offering</td>
+<td>XAJJ_VPC_Offering_SourceNat_8C8G</td>
+</tr>
+<tr>
+<td>Zabbix</td>
+<td><a href="http://10.255.96.182/zabbix/charts.php?ddreset=1" target="_blank">http://10.255.96.182/zabbix/charts.php?ddreset=1</a></td>
+</tr>
+<tr>
+<td>Zabbix   account</td>
+<td>yanfa</td>
+</tr>
+<tr>
+<td>Zabbix   password</td>
+<td>!@#yanqwe</td>
+</tr>
+</tbody>
+</table>
+<p><img src="http://localhost:4000/Chapter4/img/xianjiaojing.png" alt="xianjiaojing"></p>
+<p>&#x3010;&#x64CD;&#x4F5C;&#x6B65;&#x9AA4;&#x3011;</p>
+<p>  (1)  &#x68C0;&#x67E5;VR&#x76D1;&#x63A7;&#xFF1B;</p>
+<p>  (2)  &#x767B;&#x9646;vCenter&#x627E;&#x5230;VR&#x865A;&#x673A;&#xFF0C;&#x5173;&#x673A;&#x540E;clone&#xFF0C;&#x5907;&#x4EE5;&#x540E;&#x68C0;&#x67E5;&#xFF1B;</p>
+<p>  (3)  &#x91CD;&#x542F;VPC&#x7F51;&#x7EDC;&#xFF0C;&#x91CD;&#x5EFA;VR&#x865A;&#x673A;&#xFF1B;</p>
+<p>  (4)  &#x767B;&#x9646;VR   </p>
+<pre><code>ssh -p 3922 -o StrictHostKeyChecking=no -i  /var/cloudstack/management/.ssh/id_rsa root@10.134.16.14
+</code></pre><p>  (5)  &#x624B;&#x52A8;&#x4FEE;&#x6539;haproxy.cfg&#x5728;global&#x5757;&#x5185;&#x589E;&#x52A0;&#x914D;&#x7F6E; </p>
+<pre><code>nbproc 4
+</code></pre><p>&#x200B;         &#x91CD;&#x65B0;&#x8F7D;&#x5165;haproxy </p>
+<pre><code>service haproxy reload
+</code></pre><p>  (6)   &#x4FEE;&#x6539;TC</p>
+<p>&#x200B;          &#x67E5;&#x770B;&#x914D;&#x7F6E;&#x516C;&#x7F51;&#x5730;&#x5740;IP eth1 ~ eth5</p>
+<pre><code>1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu 65536 qdisc noqueue state UNKNOWN 
+
+&#x200B;    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+
+&#x200B;    inet 127.0.0.1/8 scope host lo
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+&#x200B;    inet6 ::1/128 scope host 
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+2: eth0: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc mq state UP qlen 1000
+
+&#x200B;    link/ether 02:00:56:94:1d:a8 brd ff:ff:ff:ff:ff:ff
+
+&#x200B;    inet 10.134.16.14/21 brd 10.134.23.255 scope global eth0
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+&#x200B;    inet6 fe80::56ff:fe94:1da8/64 scope link 
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+3: eth1: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc mq state UP qlen 1000
+
+&#x200B;    link/ether 00:00:00:00:0f:4b brd ff:ff:ff:ff:ff:ff
+
+&#x200B;    inet 113.141.67.112/22 brd 113.141.67.255 scope global eth1
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+&#x200B;    inet 113.141.65.87/22 brd 113.141.67.255 scope global secondary eth1
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+&#x200B;    inet 113.141.64.85/22 brd 113.141.67.255 scope global secondary eth1
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+&#x200B;    inet 113.141.64.219/22 brd 113.141.67.255 scope global secondary eth1
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+&#x200B;    inet 113.141.67.92/22 brd 113.141.67.255 scope global secondary eth1
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+&#x200B;    inet 113.141.64.114/22 brd 113.141.67.255 scope global secondary eth1
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+&#x200B;    inet 113.141.67.225/22 brd 113.141.67.255 scope global secondary eth1
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+&#x200B;    inet 113.141.64.140/22 brd 113.141.67.255 scope global secondary eth1
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+&#x200B;    inet 113.141.64.163/22 brd 113.141.67.255 scope global secondary eth1
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+&#x200B;    inet 113.141.64.180/22 brd 113.141.67.255 scope global secondary eth1
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+&#x200B;    inet 113.141.65.243/22 brd 113.141.67.255 scope global secondary eth1
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+&#x200B;    inet 113.141.67.34/22 brd 113.141.67.255 scope global secondary eth1
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+&#x200B;    inet 113.141.64.162/22 brd 113.141.67.255 scope global secondary eth1
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+&#x200B;    inet 113.141.65.174/22 brd 113.141.67.255 scope global secondary eth1
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+&#x200B;    inet 113.141.66.75/22 brd 113.141.67.255 scope global secondary eth1
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+&#x200B;    inet 113.141.65.98/22 brd 113.141.67.255 scope global secondary eth1
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+&#x200B;    inet 113.141.64.176/22 brd 113.141.67.255 scope global secondary eth1
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+&#x200B;    inet 113.141.66.119/22 brd 113.141.67.255 scope global secondary eth1
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+&#x200B;    inet 113.141.65.64/22 brd 113.141.67.255 scope global secondary eth1
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+&#x200B;    inet 113.141.64.173/22 brd 113.141.67.255 scope global secondary eth1
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+&#x200B;    inet 113.141.64.28/22 brd 113.141.67.255 scope global secondary eth1
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+&#x200B;    inet 113.141.64.232/22 brd 113.141.67.255 scope global secondary eth1
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+&#x200B;    inet 113.141.65.2/22 brd 113.141.67.255 scope global secondary eth1
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+&#x200B;    inet 113.141.65.207/22 brd 113.141.67.255 scope global secondary eth1
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+&#x200B;    inet 113.141.65.104/22 brd 113.141.67.255 scope global secondary eth1
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+&#x200B;    inet 113.141.66.208/22 brd 113.141.67.255 scope global secondary eth1
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+&#x200B;    inet 113.141.64.200/22 brd 113.141.67.255 scope global secondary eth1
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+&#x200B;    inet 113.141.65.199/22 brd 113.141.67.255 scope global secondary eth1
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+&#x200B;    inet6 fe80::200:ff:fe00:f4b/64 scope link 
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+4: eth2: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc mq state UP qlen 1000
+
+&#x200B;    link/ether 06:60:1e:00:17:5a brd ff:ff:ff:ff:ff:ff
+
+&#x200B;    inet 113.141.72.35/24 brd 113.141.72.255 scope global eth2
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+&#x200B;    inet 113.141.72.75/24 brd 113.141.72.255 scope global secondary eth2
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+&#x200B;    inet 113.141.72.224/24 brd 113.141.72.255 scope global secondary eth2
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+&#x200B;    inet 113.141.72.248/24 brd 113.141.72.255 scope global secondary eth2
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+&#x200B;    inet6 fe80::460:1eff:fe00:175a/64 scope link 
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+5: eth3: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc mq state UP qlen 1000
+
+&#x200B;    link/ether 06:94:8c:00:26:40 brd ff:ff:ff:ff:ff:ff
+
+&#x200B;    inet 203.3.81.205/21 brd 203.3.87.255 scope global eth3
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+&#x200B;    inet 203.3.87.25/21 brd 203.3.87.255 scope global secondary eth3
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+&#x200B;    inet6 fe80::494:8cff:fe00:2640/64 scope link 
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+6: eth4: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc mq state UP qlen 1000
+
+&#x200B;    link/ether 06:97:44:00:15:b7 brd ff:ff:ff:ff:ff:ff
+
+&#x200B;    inet 113.141.70.177/24 brd 113.141.70.255 scope global eth4
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+&#x200B;    inet 113.141.70.116/24 brd 113.141.70.255 scope global secondary eth4
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+&#x200B;    inet6 fe80::497:44ff:fe00:15b7/64 scope link 
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+7: eth5: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc mq state UP qlen 1000
+
+&#x200B;    link/ether 06:43:f0:00:19:9d brd ff:ff:ff:ff:ff:ff
+
+&#x200B;    inet 113.141.73.223/24 brd 113.141.73.255 scope global eth5
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+&#x200B;    inet 113.141.73.109/24 brd 113.141.73.255 scope global secondary eth5
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+&#x200B;    inet6 fe80::443:f0ff:fe00:199d/64 scope link 
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+8: eth6: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc mq state UP qlen 1000
+
+&#x200B;    link/ether 02:00:37:57:00:5e brd ff:ff:ff:ff:ff:ff
+
+&#x200B;    inet 172.16.0.1/24 brd 172.16.0.255 scope global eth6
+
+&#x200B;       valid_lft forever preferred_lft forever
+
+&#x200B;    inet6 fe80::37ff:fe57:5e/64 scope link 
+
+&#x200B;       valid_lft forever preferred_lft forever
+</code></pre><pre><code>tc qdisc del dev eth1 root
+
+tc qdisc del dev eth2 root
+
+tc qdisc del dev eth3 root
+
+tc qdisc del dev eth4 root
+
+tc qdisc del dev eth5 root
+</code></pre><p>  (7)   &#x67E5;&#x770B;TC</p>
+<pre><code>tc -s -d qdisc show dev eth1
+
+tc -s -d qdisc show dev eth2
+
+tc -s -d qdisc show dev eth3
+
+tc -s -d qdisc show dev eth4
+
+tc -s -d qdisc show dev eth5
+</code></pre><p>  (8)  &#x5BF9;&#x6BD4;&#x914D;&#x7F6E;</p>
+<pre><code>haproxy.cfg
+
+ip addr
+
+ip rule
+
+iptables
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 第四章  CloudStack平台运维">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="sector2.html" class="navigation navigation-next " aria-label="Next page: 第2节：四维图新案例">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第1节：西安交警案例","level":"1.5.1","depth":2,"next":{"title":"第2节：四维图新案例","level":"1.5.2","depth":2,"path":"Chapter4/sector2.md","ref":"Chapter4/sector2.md","articles":[]},"previous":{"title":"第四章  CloudStack平台运维","level":"1.5","depth":1,"path":"Chapter4/README.md","ref":"Chapter4/README.md","articles":[{"title":"第1节：西安交警案例","level":"1.5.1","depth":2,"path":"Chapter4/sector1.md","ref":"Chapter4/sector1.md","articles":[]},{"title":"第2节：四维图新案例","level":"1.5.2","depth":2,"path":"Chapter4/sector2.md","ref":"Chapter4/sector2.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Chapter4/sector1.md","mtime":"2019-08-08T02:36:10.336Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-13T06:04:56.434Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
